@@ -1,0 +1,151 @@
+// Import all of Bootstrap's CSS
+@import "~bootstrap/scss/bootstrap";
+
+body {
+    background-color:#343a40;
+	color: var(--bs-gray-500);
+	overflow-x: hidden;
+}
+
+footer {
+	margin-top: 1.5rem;
+}
+
+.errorpage {
+	margin-top: 5px;
+	margin-left: 5px;
+}
+
+.main {
+	padding-top: 1.5rem;
+	background-image: url(../assets/images/wave-haikei.svg);
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+	// make the background image fill the whole screen
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+// Footer icon anmations
+.footer-icon { 
+	animation: footer-icon;
+	animation-duration: 0.3s;
+	animation-fill-mode: forwards;
+	color: var(--bs-gray-500);
+}
+
+.footer-icon:hover {
+	color: var(--bs-gray-500);
+	animation: footer-icon-hover;
+	animation-duration: 0.3s;
+	animation-fill-mode: forwards;
+}
+  
+@keyframes footer-icon-hover {
+	from {
+		color: var(--bs-gray-500);
+	}
+	to {
+		color: $blue-700;
+	}
+}
+
+@keyframes footer-icon {
+	from {
+		color: $blue-700;
+	}
+	to {
+		color: var(--bs-gray-500);
+	}
+}
+
+footer {
+	border-top: var(--bs-border-width) var(--bs-border-style) var(--bs-gray-500);
+}
+
+.cards {
+	background-color: $cyan-800;
+}
+
+a:link {
+	text-decoration: none !important;
+}
+a:visited {
+	text-decoration: none !important;
+}
+a:hover {
+	text-decoration: none !important;
+}
+a:active {
+	text-decoration: none !important;
+}
+a { 
+	text-decoration: none !important;
+}
+
+// Youtube icon anmations
+.youtube-icon { 
+	animation: youtube-icon;
+	animation-duration: 0.3s;
+	animation-fill-mode: forwards;
+	color: var(--bs-gray-500);
+}
+
+.youtube-icon:hover {
+	color: var(--bs-gray-500);
+	animation: youtube-icon-hover;
+	animation-duration: 0.3s;
+	animation-fill-mode: forwards;
+}
+  
+@keyframes youtube-icon-hover {
+	from {
+		color: var(--bs-gray-500);
+	}
+	to {
+		color: $red-500;
+	}
+}
+
+@keyframes youtube-icon {
+	from {
+		color: $red-500;
+	}
+	to {
+		color: var(--bs-gray-500);
+	}
+}
+
+// github icon anmations
+.github-icon { 
+	animation: github-icon;
+	animation-duration: 0.3s;
+	animation-fill-mode: forwards;
+	color: var(--bs-gray-500);
+}
+
+.github-icon:hover {
+	color: var(--bs-gray-500);
+	animation: github-icon-hover;
+	animation-duration: 0.3s;
+	animation-fill-mode: forwards;
+}
+  
+@keyframes github-icon-hover {
+	from {
+		color: var(--bs-gray-500);
+	}
+	to {
+		color: $black;
+	}
+}
+
+@keyframes github-icon {
+	from {
+		color: $black;
+	}
+	to {
+		color: var(--bs-gray-500);
+	}
+}
