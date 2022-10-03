@@ -6,7 +6,7 @@ import netlifyEdge from "@netlify/vite-plugin-netlify-edge";
 
 export default defineConfig(() => {
   return {
-    ssr: { target: "node", format: "cjs", noExternal: true },
+    ssr: { target: "node", format: "cjs", noExternal: /./ },
     plugins: [
       qwikCity(),
       qwikVite({
