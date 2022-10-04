@@ -39,3 +39,6 @@ lerna-debug.log*
 
 # snyk
 .dccache
+
+# Cloudflare
+functions/**/*.js
