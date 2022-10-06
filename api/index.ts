@@ -1,6 +1,3 @@
-import { qwikCity } from '@builder.io/qwik-city/middleware/netlify-edge';
-import render from '../src/entry.ssr';
+import { start } from "../src/entry.express"
 
-const qwikCityHandler = qwikCity(render);
-
-export default qwikCityHandler;
+module.exports = start()
