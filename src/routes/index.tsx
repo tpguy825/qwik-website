@@ -2,13 +2,13 @@
 import * as bootstrap from 'bootstrap'
 
 // Qwik
+import { Link } from '@builder.io/qwik-city';
 import { component$ } from '@builder.io/qwik';
 import type { DocumentHead } from '@builder.io/qwik-city';
 
 // Components
-import Hero from '../components/Hero'
-import Creations from '../components/Creations'
-import Footer from '../components/Footer'
+import Hero from "../components/Hero"
+import Creations from "../components/Creations"
 
 export const head: DocumentHead = {
   title: 'Welcome to Qwik',

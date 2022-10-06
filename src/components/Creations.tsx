@@ -4,7 +4,7 @@ import { component$ } from "@builder.io/qwik";
 import { cards } from "./Cards"
 
 export function card(cardinfo: CardElement) {
-	var cardimage: CardImage = cardinfo.image as CardImage;
+	const cardimage: CardImage = cardinfo.image as CardImage;
 	if(cardinfo.image === undefined) {
 		return (
 			<div className="card cards">
@@ -35,31 +35,31 @@ export function card(cardinfo: CardElement) {
 
 /**
  * This is 2x2 grid of my creations.
- * To change any of the card info, go to Cards.tsx
+ * To change any of the card info, go to `Cards.tsx`
  */
-export default component$((props: any) => {
+export default component$(() => {
 	return (
 		<div>
 			<h1>My Creations</h1>
-        	<div className="row">
-        	    <div className="col">
+			<div className="row">
+				<div className="col">
 					{card(cards.topleft)}
-        	    </div>
+				</div>
 				<br/>
-        	    <div className="col">
+				<div className="col">
 					{card(cards.topright)}
 				</div>
-        	</div>
+			</div>
 			<br/>
-        	<div className="row">
-        	    <div className="col">
+			<div className="row">
+				<div className="col">
 					{card(cards.bottomleft)}
 				</div>
 				<br/>
-        	    <div className="col">
+				<div className="col">
 					{card(cards.bottomright)}
 				</div>
-        	</div>
+			</div>
 		</div>
 	);
 })
