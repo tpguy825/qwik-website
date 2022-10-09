@@ -2,7 +2,7 @@
 // It is used to configure the website and the website
 
 // Imports
-import HeroImage from "./src/components/assets/icon.webp";
+import HeroImage from "./components/assets/icon.webp";
 
 const config: WebsiteConfig = {
 	hero: {
