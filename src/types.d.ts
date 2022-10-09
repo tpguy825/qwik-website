@@ -23,3 +23,19 @@ type CardsList = {
 	bottomleft: CardElement,
 	bottomright: CardElement
 }
+
+type HeroImage = {
+	src: string;
+	alt: string;
+	width: string;
+	height: string;
+}
+
+type WebsiteConfig = {
+	hero: Hero;
+	cards: CardsList;
+}
+  
+type Hero = {
+	image: HeroImage;
+}

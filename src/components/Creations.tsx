@@ -1,7 +1,7 @@
 import { component$ } from "@builder.io/qwik";
 
 // This makes it eaiser to modify them
-import { cards } from "./Cards"
+import config from "../website.config"
 
 export function card(cardinfo: CardElement) {
 	const cardimage: CardImage = cardinfo.image as CardImage;
@@ -43,21 +43,21 @@ export default component$(() => {
 			<h1>My Creations</h1>
 			<div className="row">
 				<div className="col">
-					{card(cards.topleft)}
+					{card(config.cards.topleft)}
 				</div>
 				<br/>
 				<div className="col">
-					{card(cards.topright)}
+					{card(config.cards.topright)}
 				</div>
 			</div>
 			<br/>
 			<div className="row">
 				<div className="col">
-					{card(cards.bottomleft)}
+					{card(config.cards.bottomleft)}
 				</div>
 				<br/>
 				<div className="col">
-					{card(cards.bottomright)}
+					{card(config.cards.bottomright)}
 				</div>
 			</div>
 		</div>

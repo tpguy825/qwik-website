@@ -16,7 +16,8 @@
     "types": ["node", "vite/client"],
     "paths": {
       "~/*": ["./src/*"]
-    }
+    },
+	"forceConsistentCasingInFileNames": true
   },
   "include": ["src"]
 }
