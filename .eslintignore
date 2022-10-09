@@ -32,3 +32,4 @@ vite.config.ts
 src/types.d.ts
 website.config.ts
 config.types.d.ts
+api/index.ts
